@@ -10,6 +10,13 @@ class Noeud
 	friend class Iterateur<T>;
 public:
 	//TODO: Constructeur(s).
+	Noeud(const T& donnee) : donnee_(donnee) {}
+
 private:
 	//TODO: Attributs d'un noeud.
+	Noeud* suivant_ = past_end;
+	Noeud* precedent_ = past_end;
+	T donnee_;
+
+	inline static Noeud* past_end = nullptr;
 };
