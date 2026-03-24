@@ -36,6 +36,10 @@ public:
 	
 	void ajouterAllie(const string& allie) { allies_.push_back(allie); }
 
+	bool operator<(const Heros& autre) const {
+		return getNom() < autre.getNom();
+	}
+
 	// Les getters sont non nécessaires:
 	const string& getEnnemi() { return ennemi_; }
 	vector<string>& getAllies() { return allies_; }

@@ -44,6 +44,11 @@ public:
 		return position_ == it.position_;
 	}
 
+	bool operator!=(const Iterateur<T>& it) const
+	{
+		return position_ != it.position_;
+	}
+
 
 
 private:

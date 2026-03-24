@@ -9,6 +9,11 @@ class ListeLiee
 public:
 	using iterator = Iterateur<T>;  // Définit un alias au type, pour que ListeLiee<T>::iterator corresponde au type de son itérateur.
 
+	ListeLiee(const ListeLiee&) = delete;
+	ListeLiee& operator=(const ListeLiee&) = delete;
+	ListeLiee(ListeLiee&&) = delete;
+	ListeLiee& operator=(ListeLiee&&) = delete;
+
 	//TODO: La construction par défaut doit créer une liste vide valide.
 	ListeLiee()
 	  : tete_(nullptr),
@@ -35,8 +40,10 @@ public:
 	bool estVide() const  { return taille_ == 0; }
 	unsigned size() const { return taille_; }
 	//NOTE: to_address (C++20) permet que ce même code fonctionne que vous utilisiez des pointeurs bruts ou intelligents (ça prend le pointeur brut associé au pointeur intelligent, s'il est intelligent).
-	iterator begin()  { return {to_address(tete_)}; }
+	iterator begin()  { return {tete_}; }
+	iterator begin() const { return {tete_}; }
 	iterator end()    { return {Noeud<T>::past_end}; }
+	iterator end() const { return {Noeud<T>::past_end}; }
 
 	// Ajoute à la fin de la liste.
 	void push_back(const T& item)
@@ -62,6 +69,7 @@ public:
 	iterator insert(iterator it, const T& item)
 	{
 		Expects(it.position_ != Noeud<T>::past_end);
+		Expects(it.position_ != tete_);
 		//NOTE: Pour simplifier, vous n'avez pas à supporter l'insertion à la fin (avant "past the end"),
 		// ni l'insertion au début (avant la tête), dans cette méthode.
 		//TODO:

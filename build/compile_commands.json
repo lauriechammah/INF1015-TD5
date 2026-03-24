@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/build",
+  "command": "/usr/bin/clang++  -isystem /Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/include -g -std=c++20 -arch arm64 -fsigned-char -Wall -Wextra -Wpedantic -Woverloaded-virtual -Wno-unknown-pragmas -Wno-enum-compare -Wshadow --coverage -o CMakeFiles/ProjetTD5.dir/bibliotheque_cours/bibliotheque_cours.cpp.o -c /Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/bibliotheque_cours/bibliotheque_cours.cpp",
+  "file": "/Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/bibliotheque_cours/bibliotheque_cours.cpp",
+  "output": "CMakeFiles/ProjetTD5.dir/bibliotheque_cours/bibliotheque_cours.cpp.o"
+},
+{
+  "directory": "/Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/build",
+  "command": "/usr/bin/clang++  -isystem /Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/include -g -std=c++20 -arch arm64 -fsigned-char -Wall -Wextra -Wpedantic -Woverloaded-virtual -Wno-unknown-pragmas -Wno-enum-compare -Wshadow --coverage -o CMakeFiles/ProjetTD5.dir/bibliotheque_cours/verification_allocation.cpp.o -c /Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/bibliotheque_cours/verification_allocation.cpp",
+  "file": "/Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/bibliotheque_cours/verification_allocation.cpp",
+  "output": "CMakeFiles/ProjetTD5.dir/bibliotheque_cours/verification_allocation.cpp.o"
+},
+{
+  "directory": "/Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/build",
+  "command": "/usr/bin/clang++  -isystem /Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/include -g -std=c++20 -arch arm64 -fsigned-char -Wall -Wextra -Wpedantic -Woverloaded-virtual -Wno-unknown-pragmas -Wno-enum-compare -Wshadow --coverage -o CMakeFiles/ProjetTD5.dir/main.cpp.o -c /Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/main.cpp",
+  "file": "/Users/mayjay/School/session2_H26/INF1015/td/INF1015-TD5/main.cpp",
+  "output": "CMakeFiles/ProjetTD5.dir/main.cpp.o"
+}
+]
