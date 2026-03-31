@@ -1,6 +1,15 @@
-﻿#pragma once
+﻿/**
+ * Creation, definition et implementation de la classe ListeLiee
+ * \file   ListeLiee.hpp
+ * \author CHAMMAH (2451396) et SARKIS (2461138)
+ * \date   1 avril 2026
+ * Modifie le 24 mars 2026
+ */
+
+#pragma once
 #include "Iterateur.hpp"
 #include "gsl/gsl_assert"
+
 template<typename T> class Iterateur;
 template<typename T>
 class ListeLiee

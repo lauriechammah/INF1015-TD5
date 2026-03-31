@@ -1,6 +1,15 @@
-﻿#pragma once
+﻿/**
+ * Creation, definition et implementation de la classe Iterateur
+ * \file   Iterateur.hpp
+ * \author CHAMMAH (2451396) et SARKIS (2461138)
+ * \date   1 avril 2026
+ * Modifie le 24 mars 2026
+ */
+
+#pragma once
 #include "Noeud.hpp"
 #include "gsl/gsl_assert"
+
 template<typename T>
 class Iterateur
 {
